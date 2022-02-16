@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>USSR History Quiz</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="communism.png" type="image/x-icon">
+</head>
+<body>
+    <section id="welcome">
+        <h1>Hello, comrade. Came to test your knowledge on the great Soviet Union? Go ahead.</h1>
+        <button id="start" onclick="start()">Start</button>
+    </section>
+    <section class="question"> <!--1-->
+        <h1>What does the USSR stand for?</h1>
+        <button onclick="wrong1()">United Soviet Socialist Republics</button>
+        <button onclick="wrong1()">Union of Soviet Sovereign Republics</button>
+        <button onclick="wrong1()">United Socialist Soviet Republics</button>
+        <button class="correct" onclick="right1()">Union of Soviet Socialist Republics</button>
+    </section>
+    <section class="question"> <!--2-->
+        <h1>When was the USSR officially established?</h1>
+        <button onclick="wrong2()">December 30, 1917</button>
+        <button onclick="wrong2()">November 7, 1917</button>
+        <button class="correct" onclick="right2()">December 30, 1922</button>
+        <button onclick="wrong2()">August 17, 1922</button>
+    </section>
+    <section class="question"> <!--3-->
+        <h1>When did our great founder, Lenin, die?</h1>
+        <button class="correct" onclick="right3()">January 21, 1924</button>
+        <button onclick="wrong3()">August 5, 1924</button>
+        <button onclick="wrong3()">July 8, 1924</button>
+        <button onclick="wrong3()">September 12, 1924</button>
+    </section>
+    <section class="question"> <!--4-->
+        <h1>Where was our great leader, Stalin, born in?</h1>
+        <button onclick="wrong4()">Tbilisi, Georgia</button>
+        <button onclick="wrong4()">Moscow, Russia</button>
+        <button class="correct" onclick="right4()">Gori, Georgia</button>
+        <button onclick="wrong4()">Kyiv, Ukraine</button>
+    </section>
+    <section class="question"> <!--5-->
+        <h1>Who's signature is this?</h1>
+        <img src="116px-Leonid_Brezhnev_Signature.svg.png" alt="signature"> <br>
+        <button onclick="wrong5()">Vladimir Lenin</button>
+        <button onclick="wrong5()">Joseph Stalin</button>
+        <button class="correct" onclick="right5()">Leonid Brezhnev</button>
+        <button onclick="wrong5()">Mikhail Gorbachev</button>
+    </section>
+    <section class="question"> <!--6-->
+        <h1>Who is the only former USSR leader who is currently alive?</h1>
+        <button class="correct" onclick="right6()">Mikhail Gorbachev</button>
+        <button onclick="wrong6()">Konstantin Chernenko</button>
+        <button onclick="wrong6()">Yuri Andropov</button>
+        <button onclick="wrong6()">Leonid Brezhnev</button>
+    </section>
+    <section class="question"> <!--7-->
+        <h1>How big was the USSR at its peak?</h1>
+        <button onclick="wrong7()">Around 5,000,000 square kilometers</button>
+        <button onclick="wrong7()">Around 9,500,000 square kilometers</button>
+        <button onclick="wrong7()">Around 17,200,000 square kilometers</button>
+        <button class="correct" onclick="right7()">Around 22,400,000 square kilometers</button>
+    </section>
+    <section class="question"> <!--8-->
+        <h1>When did the USSR collapse?</h1>
+        <button onclick="wrong8()">December 31, 1991</button>
+        <button class="correct" onclick="right8()">December 25, 1991</button>
+        <button onclick="wrong8()">August 25, 1992</button>
+        <button onclick="wrong8()">August 25, 1991</button>
+    </section>
+    <section class="question"> <!--9-->
+        <h1>Who was the first president of the Russian Federation after the USSR collapsed?</h1>
+        <button onclick="wrong9()">Vladimir Putin</button>
+        <button class="correct" onclick="right9()">Boris Yeltsin</button>
+        <button onclick="wrong9()">Mikhail Gorbachev</button>
+        <button onclick="wrong9()">Leonid Brezhnev</button>
+    </section>
+    <section class="question"> <!--10-->
+        <h1>Who composed the USSR anthem tune?</h1>
+        <button class="correct" onclick="right10()">Alexander Alexandrov</button>
+        <button onclick="wrong10()">Sergey Mikhalkov</button>
+        <button onclick="wrong10()">Gabriel El-Registan</button>
+        <button onclick="wrong10()">Boris Yeltsin</button>
+    </section>
+    <section id="end">
+        <img src="communism.png" alt="communism" width="50px">
+        <h2>Congratulations! You are a <span id="title"></span>, you got <span id="points"></span> questions right.</h2>
+    </section>
+<script src="index.js"></script>
+</body>
+</html>
